@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    
+    /* Media.io Coffee Shop Color Palette */
+    --color-primary: #C05C38; /* Warm Cinnamon Caramel / Terracotta */
+    --color-primary-dark: #A64724;
+    --color-espresso: #2C1D1A; /* Deep Rich Espresso */
+    --color-secondary: #D99443; /* Warm Amber Honey */
+    --color-accent-green: #4A6B53; /* Matcha Sage */
+    --color-canvas: #FBF3E8; /* Oat Milk Minimal Crema */
+    --color-card: #FFFFFF;
+    --color-card-subtle: #F5EBE1; /* Warm Latte Cream */
+    --color-border: #E8DCC8; /* Soft Hazelnut & Milk Foam */
+    --color-text-main: #2C1D1A; /* Deep Roasted Bean */
+    --color-text-muted: #7D6858; /* Warm Cinnamon Taupe */
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-canvas);
+    color: var(--color-text-main);
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.shadow-coffee-card {
+  box-shadow: 0 4px 16px -2px rgba(44, 29, 26, 0.06), 0 2px 6px -1px rgba(192, 92, 56, 0.04);
+}
+
+.shadow-coffee-hover {
+  box-shadow: 0 12px 28px -4px rgba(44, 29, 26, 0.12), 0 6px 14px -2px rgba(192, 92, 56, 0.08);
+}
+
+.shadow-coffee-floating {
+  box-shadow: 0 10px 30px -4px rgba(44, 29, 26, 0.22), 0 4px 12px -2px rgba(192, 92, 56, 0.14);
+}
+
+/* Custom scrollbars with warm coffee tones */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F5EBE1;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBBBA0;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C05C38;
+}
